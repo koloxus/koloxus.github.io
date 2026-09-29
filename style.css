@@ -1,0 +1,37 @@
+:root {
+  --page: #142319;
+  --card: #1b2e1f;
+  --text: #e8f2e0;
+  --muted: #b5c7aa;
+  --her: #8eef2c;
+  --line: rgba(226, 242, 214, .13);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --page: #f4f7ef;
+    --card: #ffffff;
+    --text: #17220f;
+    --muted: #4a5a3e;
+    --her: #2f7a12;
+    --line: rgba(20, 29, 14, .14);
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--page); color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+main {
+  max-width: 640px; margin: 0 auto; padding: 56px 16px 72px;
+}
+h1 { margin: 0 0 4px; font-size: 32px; letter-spacing: -.01em; }
+h1 span { color: var(--her); }
+h2 { margin: 32px 0 8px; font-size: 18px; }
+p, li { color: var(--muted); }
+strong { color: var(--text); }
+.card {
+  margin-top: 24px; padding: 20px 22px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+}
+a { color: var(--her); }
+footer { margin-top: 40px; font-size: 14px; color: var(--muted); }
